@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         id="edu.kit.ipd.sdq.pcm.codegen.m2m.reliability.workflow_extension"
+         id="org.palladiosimulator.reliability.simucom.workflow_extension"
          name="SimuCom Reliability Extension"
          point="de.uka.ipd.sdq.workflow.job">
       <workflow_job
@@ -15,7 +15,7 @@
          name="name"
          point="de.uka.ipd.sdq.workflow.tab.extension">
       <workflow_extension
-            name="edu.kit.ipd.sdq.pcm.codegen.m2m.reliability.workflow_extension1"
+            name="org.palladiosimulator.reliability.simucom.workflow_extension1"
             runconfig_tab="org.palladiosimulator.reliability.simucom.jobs.ReliabilityExtensionTab"
             workflow_id="workflow.extension.simucom.before.codegeneration">
       </workflow_extension>
