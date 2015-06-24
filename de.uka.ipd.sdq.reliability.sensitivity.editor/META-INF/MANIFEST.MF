@@ -4,11 +4,11 @@ Bundle-Name: EMF Editor Plug-in for PCM Markov Sensitivity Model
 Bundle-SymbolicName: org.palladiosimulator.reliability.sensitivity.editor;singleton:=true
 Bundle-Version: 3.1.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: de.uka.ipd.sdq.sensitivity.presentation.SensitivityEditorPlugin$Implementation
+Bundle-Activator: org.palladiosimulator.reliability.sensitivity.presentation.SensitivityEditorPlugin$Implementation
 Bundle-Vendor: palladiosimulator.org
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: de.uka.ipd.sdq.sensitivity.presentation
+Export-Package: org.palladiosimulator.reliability.sensitivity.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  org.palladiosimulator.reliability.sensitivity.edit;visibility:=reexport,
