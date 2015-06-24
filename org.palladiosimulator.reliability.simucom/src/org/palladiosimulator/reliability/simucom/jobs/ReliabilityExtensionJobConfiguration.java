@@ -1,4 +1,4 @@
-package edu.kit.ipd.sdq.pcm.codegen.m2m.reliability.jobs;
+package org.palladiosimulator.reliability.simucom.jobs;
 
 import de.uka.ipd.sdq.workflow.extension.AbstractExtensionJobConfiguration;
 
