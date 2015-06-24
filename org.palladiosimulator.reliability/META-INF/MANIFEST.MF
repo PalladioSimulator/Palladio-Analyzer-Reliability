@@ -17,6 +17,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.palladiosimulator.metricspec;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-Vendor: sdq.ipd.uka.de
+Bundle-Vendor: palladiosimulator.org
 Export-Package: org.palladiosimulator.reliability,
  org.palladiosimulator.reliability.helper
