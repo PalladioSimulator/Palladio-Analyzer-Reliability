@@ -7,9 +7,9 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 
-import de.uka.ipd.sdq.markov.MarkovChain;
-import de.uka.ipd.sdq.markov.State;
-import de.uka.ipd.sdq.markov.StateType;
+import org.palladiosimulator.reliability.markov.MarkovChain;
+import org.palladiosimulator.reliability.markov.State;
+import org.palladiosimulator.reliability.markov.StateType;
 import org.palladiosimulator.pcm.reliability.ExternalFailureOccurrenceDescription;
 import org.palladiosimulator.pcm.reliability.FailureType;
 import org.palladiosimulator.pcm.reliability.HardwareInducedFailureType;

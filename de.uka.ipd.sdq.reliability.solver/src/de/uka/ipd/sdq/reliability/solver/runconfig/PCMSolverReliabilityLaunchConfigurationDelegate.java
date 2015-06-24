@@ -71,7 +71,7 @@ public class PCMSolverReliabilityLaunchConfigurationDelegate extends PCMSolverLa
         ArrayList<LoggerAppenderStruct> loggerList = super.setupLogging(logLevel);
         loggerList.add(setupLogger("de.uka.ipd.sdq.reliability", logLevel,
                 Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN : SHORT_LOG_PATTERN));
-        loggerList.add(setupLogger("de.uka.ipd.sdq.markov", logLevel, Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN
+        loggerList.add(setupLogger("org.palladiosimulator.reliability.markov", logLevel, Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN
                 : SHORT_LOG_PATTERN));
 
         return loggerList;

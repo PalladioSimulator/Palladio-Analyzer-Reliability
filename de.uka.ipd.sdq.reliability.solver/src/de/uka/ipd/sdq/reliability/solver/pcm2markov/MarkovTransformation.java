@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 
-import de.uka.ipd.sdq.markov.MarkovChain;
+import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;

@@ -2,8 +2,8 @@ package de.uka.ipd.sdq.reliability.solver;
 
 import org.apache.log4j.Logger;
 
-import de.uka.ipd.sdq.markov.MarkovChain;
-import de.uka.ipd.sdq.markov.Transition;
+import org.palladiosimulator.reliability.markov.MarkovChain;
+import org.palladiosimulator.reliability.markov.Transition;
 
 /**
  * This class solves Markov Chains in the sense that it calculates the probability of getting from

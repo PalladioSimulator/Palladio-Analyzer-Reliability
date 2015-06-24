@@ -3,12 +3,12 @@ package de.uka.ipd.sdq.reliability.solver.pcm2markov;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.uka.ipd.sdq.markov.Label;
-import de.uka.ipd.sdq.markov.MarkovChain;
-import de.uka.ipd.sdq.markov.MarkovFactory;
-import de.uka.ipd.sdq.markov.State;
-import de.uka.ipd.sdq.markov.StateType;
-import de.uka.ipd.sdq.markov.Transition;
+import org.palladiosimulator.reliability.markov.Label;
+import org.palladiosimulator.reliability.markov.MarkovChain;
+import org.palladiosimulator.reliability.markov.MarkovFactory;
+import org.palladiosimulator.reliability.markov.State;
+import org.palladiosimulator.reliability.markov.StateType;
+import org.palladiosimulator.reliability.markov.Transition;
 import org.palladiosimulator.pcm.seff.AbstractAction;
 import org.palladiosimulator.pcm.seff.ForkedBehaviour;
 import de.uka.ipd.sdq.probfunction.Sample;

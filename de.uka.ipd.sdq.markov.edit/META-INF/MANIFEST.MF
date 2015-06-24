@@ -4,11 +4,11 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: org.palladiosimulator.reliability.markov.edit;singleton:=true
 Bundle-Version: 3.2.0.qualifier
 Bundle-ClassPath: .
-Bundle-Activator: de.uka.ipd.sdq.markov.provider.MarkovEditPlugin$Implementation
+Bundle-Activator: org.palladiosimulator.reliability.markov.provider.MarkovEditPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: de.uka.ipd.sdq.markov.provider
+Export-Package: org.palladiosimulator.reliability.markov.provider
 Require-Bundle: org.eclipse.core.runtime,
  org.palladiosimulator.reliability.markov;visibility:=reexport,
  org.eclipse.emf.edit;visibility:=reexport

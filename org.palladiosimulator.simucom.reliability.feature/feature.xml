@@ -59,21 +59,21 @@ based on the Palladio component model.
    </requires>
 
    <plugin
-         id="de.uka.ipd.sdq.markov"
+         id="org.palladiosimulator.reliability.markov"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="de.uka.ipd.sdq.markov.edit"
+         id="org.palladiosimulator.reliability.markov.edit"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="de.uka.ipd.sdq.markov.editor"
+         id="org.palladiosimulator.reliability.markov.editor"
          download-size="0"
          install-size="0"
          version="0.0.0"

@@ -9,10 +9,10 @@ import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
-import de.uka.ipd.sdq.markov.Label;
-import de.uka.ipd.sdq.markov.MarkovChain;
-import de.uka.ipd.sdq.markov.State;
-import de.uka.ipd.sdq.markov.Transition;
+import org.palladiosimulator.reliability.markov.Label;
+import org.palladiosimulator.reliability.markov.MarkovChain;
+import org.palladiosimulator.reliability.markov.State;
+import org.palladiosimulator.reliability.markov.Transition;
 import de.uka.ipd.sdq.reliability.core.helper.EMFHelper;
 
 /**

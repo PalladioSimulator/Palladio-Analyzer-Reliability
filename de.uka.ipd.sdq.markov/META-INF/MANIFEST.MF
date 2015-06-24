@@ -7,9 +7,9 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: de.uka.ipd.sdq.markov.impl,
- de.uka.ipd.sdq.markov.util,
- de.uka.ipd.sdq.markov
+Export-Package: org.palladiosimulator.reliability.markov,
+ org.palladiosimulator.reliability.markov.impl,
+ org.palladiosimulator.reliability.markov.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy

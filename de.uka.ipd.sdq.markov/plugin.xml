@@ -12,9 +12,17 @@
 
   <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
-       uri = "http://sdq.ipd.uka.de/FiniteMakovChain/1.0" 
-       class = "de.uka.ipd.sdq.markov.MarkovPackage"
+       uri = "http://palladiosimulator.org/Reliability/FiniteMarkovChain/1.0" 
+       class = "org.palladiosimulator.reliability.markov.MarkovPackage"
        genModel = "model/markov.genmodel" /> 
   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated markov -->
+      <package
+            uri="http://palladiosimulator.org/Reliability/FiniteMarkovChain/1.0"
+            class="org.palladiosimulator.reliability.markov.MarkovPackage"
+            genModel="model/markov.genmodel"/>
+   </extension>
 
 </plugin>
