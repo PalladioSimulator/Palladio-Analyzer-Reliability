@@ -12,8 +12,8 @@ import org.eclipse.emf.common.util.EList;
 
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
-import de.uka.ipd.sdq.reliability.core.helper.EMFHelper;
 
+import org.palladiosimulator.reliability.helper.EMFHelper;
 import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
 import org.palladiosimulator.reliability.sensitivity.SensitivityParameterVariation;
 import org.palladiosimulator.reliability.sensitivity.SensitivityResultSpecification;

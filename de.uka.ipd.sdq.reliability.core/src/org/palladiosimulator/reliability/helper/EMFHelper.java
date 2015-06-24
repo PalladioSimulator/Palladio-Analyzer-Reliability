@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core.helper;
+package org.palladiosimulator.reliability.helper;
 
 import java.io.File;
 import java.io.FileNotFoundException;

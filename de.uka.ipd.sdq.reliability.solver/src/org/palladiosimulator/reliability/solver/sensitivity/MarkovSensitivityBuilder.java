@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 
 import org.palladiosimulator.pcm.reliability.SoftwareInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.helper.EMFHelper;
+import org.palladiosimulator.reliability.helper.EMFHelper;
 import org.palladiosimulator.reliability.sensitivity.CombinedSensitivityParameter;
 import org.palladiosimulator.reliability.sensitivity.CommunicationLinkReliabilityParameter;
 import org.palladiosimulator.reliability.sensitivity.ComponentReliabilityParameter;

@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core.helper;
+package org.palladiosimulator.reliability.helper;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -38,12 +38,12 @@ import org.palladiosimulator.pcm.seff.InternalAction;
 import org.palladiosimulator.pcm.seff.SeffFactory;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.system.System;
-import de.uka.ipd.sdq.reliability.core.MarkovEvaluationType;
-import de.uka.ipd.sdq.reliability.core.MarkovFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovHardwareInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovNetworkInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovResourceTimeoutFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovSoftwareInducedFailureType;
+import org.palladiosimulator.reliability.MarkovEvaluationType;
+import org.palladiosimulator.reliability.MarkovFailureType;
+import org.palladiosimulator.reliability.MarkovHardwareInducedFailureType;
+import org.palladiosimulator.reliability.MarkovNetworkInducedFailureType;
+import org.palladiosimulator.reliability.MarkovResourceTimeoutFailureType;
+import org.palladiosimulator.reliability.MarkovSoftwareInducedFailureType;
 
 /**
  * This class provides auxiliary functionality for managing MarkovFailureTypes.

@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core;
+package org.palladiosimulator.reliability;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -15,8 +15,7 @@ import org.palladiosimulator.commons.designpatterns.AbstractObservable;
 import org.palladiosimulator.metricspec.Identifier;
 import org.palladiosimulator.metricspec.util.builder.IdentifierBuilder;
 import org.palladiosimulator.probeframework.probes.EventProbe;
-
-import de.uka.ipd.sdq.reliability.core.probe.TakeExecutionResultProbe;
+import org.palladiosimulator.reliability.probe.TakeExecutionResultProbe;
 
 /**
  * Singleton class that is used for counting simulated failures and printing statistics.

@@ -6,7 +6,10 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
-
+import org.palladiosimulator.reliability.MarkovEvaluationType;
+import org.palladiosimulator.reliability.MarkovHardwareInducedFailureType;
+import org.palladiosimulator.reliability.MarkovNetworkInducedFailureType;
+import org.palladiosimulator.reliability.MarkovSoftwareInducedFailureType;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.markov.State;
 import org.palladiosimulator.reliability.markov.StateType;
@@ -48,10 +51,6 @@ import org.palladiosimulator.pcm.seff.util.SeffSwitch;
 import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
 import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
 import de.uka.ipd.sdq.probfunction.math.ManagedPMF;
-import de.uka.ipd.sdq.reliability.core.MarkovEvaluationType;
-import de.uka.ipd.sdq.reliability.core.MarkovHardwareInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovNetworkInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovSoftwareInducedFailureType;
 
 /**
  * This class represents a visitor for an RDSEFF within a PCM instance. The visitor is used in the

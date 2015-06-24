@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core;
+package org.palladiosimulator.reliability;
 
 import org.palladiosimulator.pcm.repository.Interface;
 import org.palladiosimulator.pcm.repository.Role;

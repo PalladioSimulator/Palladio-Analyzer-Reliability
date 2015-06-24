@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PCM Reliability Core Definitions
-Bundle-SymbolicName: de.uka.ipd.sdq.reliability.core;singleton:=true
+Bundle-SymbolicName: org.palladiosimulator.reliability;singleton:=true
 Bundle-Version: 3.1.0.qualifier
 Require-Bundle: org.eclipse.core.runtime,
  org.apache.log4j,
@@ -18,5 +18,5 @@ Require-Bundle: org.eclipse.core.runtime,
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: sdq.ipd.uka.de
-Export-Package: de.uka.ipd.sdq.reliability.core,
- de.uka.ipd.sdq.reliability.core.helper
+Export-Package: org.palladiosimulator.reliability,
+ org.palladiosimulator.reliability.helper

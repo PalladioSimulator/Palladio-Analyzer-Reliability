@@ -6,15 +6,15 @@ import java.util.Map;
 import java.util.TreeSet;
 
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
+import org.palladiosimulator.reliability.MarkovEvaluationType;
+import org.palladiosimulator.reliability.MarkovFailureType;
+import org.palladiosimulator.reliability.MarkovHardwareInducedFailureType;
+import org.palladiosimulator.reliability.MarkovNetworkInducedFailureType;
+import org.palladiosimulator.reliability.MarkovSoftwareInducedFailureType;
 import org.palladiosimulator.reliability.solver.pcm2markov.MarkovResultApproximation;
 import org.palladiosimulator.reliability.solver.pcm2markov.MarkovTransformationResult;
 
 import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
-import de.uka.ipd.sdq.reliability.core.MarkovEvaluationType;
-import de.uka.ipd.sdq.reliability.core.MarkovFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovHardwareInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovNetworkInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovSoftwareInducedFailureType;
 
 /**
  * Class used for aggregation and output of success/failure probabilities that were calculated

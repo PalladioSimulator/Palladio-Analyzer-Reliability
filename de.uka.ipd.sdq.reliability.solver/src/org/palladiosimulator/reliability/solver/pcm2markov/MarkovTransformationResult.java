@@ -11,12 +11,11 @@ import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.eclipse.core.runtime.FileLocator;
-
+import org.palladiosimulator.reliability.MarkovFailureType;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.markov.State;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
-import de.uka.ipd.sdq.reliability.core.MarkovFailureType;
 
 /**
  * Aggregates the results of a PCM2MarkovTransformation.

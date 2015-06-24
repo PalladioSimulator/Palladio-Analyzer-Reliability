@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
-
+import org.palladiosimulator.reliability.MarkovEvaluationType;
+import org.palladiosimulator.reliability.MarkovFailureType;
+import org.palladiosimulator.reliability.helper.MarkovFailureTypeHelper;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.solver.MarkovSolver;
 import org.palladiosimulator.reliability.solver.sensitivity.MarkovSensitivity;
@@ -13,9 +15,6 @@ import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
 import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
 import de.uka.ipd.sdq.pcmsolver.visitors.UsageModelVisitor;
-import de.uka.ipd.sdq.reliability.core.MarkovEvaluationType;
-import de.uka.ipd.sdq.reliability.core.MarkovFailureType;
-import de.uka.ipd.sdq.reliability.core.helper.MarkovFailureTypeHelper;
 
 /**
  * This class has the functionality to perform a complete PCM2Markov transformation.

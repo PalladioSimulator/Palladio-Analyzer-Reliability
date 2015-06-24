@@ -1,6 +1,6 @@
 package org.palladiosimulator.reliability.solver.pcm2markov;
 
-import de.uka.ipd.sdq.reliability.core.MarkovFailureType;
+import org.palladiosimulator.reliability.MarkovFailureType;
 
 /**
  * Describes a point of failure in a PCM model.

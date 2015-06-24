@@ -36,7 +36,7 @@ based on the Palladio component model.
       <import plugin="org.eclipse.emf.query"/>
       <import plugin="org.eclipse.emf.common.ui"/>
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
-      <import plugin="de.uka.ipd.sdq.reliability.core" version="3.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.reliability" version="3.1.0" match="greaterOrEqual"/>
       <import plugin="de.fzi.se.accuracy" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="de.uka.ipd.sdq.reliability.sensitivity" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.apache.log4j"/>
@@ -87,7 +87,7 @@ based on the Palladio component model.
          unpack="false"/>
 
    <plugin
-         id="de.uka.ipd.sdq.reliability.core"
+         id="org.palladiosimulator.reliability"
          download-size="0"
          install-size="0"
          version="0.0.0"

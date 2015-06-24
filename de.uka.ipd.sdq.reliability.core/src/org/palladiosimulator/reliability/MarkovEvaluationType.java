@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core;
+package org.palladiosimulator.reliability;
 
 /**
  * Describes the granularity of distinction between failure types in the reliability analysis and

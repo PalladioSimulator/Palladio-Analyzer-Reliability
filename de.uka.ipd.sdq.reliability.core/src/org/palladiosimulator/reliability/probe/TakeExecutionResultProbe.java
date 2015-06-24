@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core.probe;
+package org.palladiosimulator.reliability.probe;
 
 import java.util.Map;
 
@@ -13,10 +13,9 @@ import org.palladiosimulator.metricspec.Identifier;
 import org.palladiosimulator.metricspec.Scale;
 import org.palladiosimulator.metricspec.util.builder.TextualBaseMetricDescriptionBuilder;
 import org.palladiosimulator.probeframework.probes.BasicEventProbe;
-
-import de.uka.ipd.sdq.reliability.core.FailureStatistics;
-import de.uka.ipd.sdq.reliability.core.IFailureStatisticsListener;
-import de.uka.ipd.sdq.reliability.core.MarkovFailureType;
+import org.palladiosimulator.reliability.FailureStatistics;
+import org.palladiosimulator.reliability.IFailureStatisticsListener;
+import org.palladiosimulator.reliability.MarkovFailureType;
 
 /**
  * ProbeStrategy which is able to measure the type of an execution result.

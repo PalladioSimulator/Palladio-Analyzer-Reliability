@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core;
+package org.palladiosimulator.reliability;
 
 public interface IFailureStatisticsListener {
 

@@ -1,4 +1,4 @@
-package de.uka.ipd.sdq.reliability.core;
+package org.palladiosimulator.reliability;
 
 /**
  * Represents a type identification for failure-on-demand occurrences during the reliability

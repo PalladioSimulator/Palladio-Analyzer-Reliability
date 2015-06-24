@@ -9,11 +9,10 @@ import org.palladiosimulator.pcm.reliability.FailureType;
 import org.palladiosimulator.pcm.reliability.HardwareInducedFailureType;
 import org.palladiosimulator.pcm.reliability.NetworkInducedFailureType;
 import org.palladiosimulator.pcm.reliability.SoftwareInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovHardwareInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovNetworkInducedFailureType;
-import de.uka.ipd.sdq.reliability.core.MarkovSoftwareInducedFailureType;
-
+import org.palladiosimulator.reliability.MarkovFailureType;
+import org.palladiosimulator.reliability.MarkovHardwareInducedFailureType;
+import org.palladiosimulator.reliability.MarkovNetworkInducedFailureType;
+import org.palladiosimulator.reliability.MarkovSoftwareInducedFailureType;
 import org.palladiosimulator.reliability.sensitivity.DoubleOffsetSequence;
 import org.palladiosimulator.reliability.sensitivity.DoubleParameterRange;
 import org.palladiosimulator.reliability.sensitivity.DoubleParameterSequence;
