@@ -44,7 +44,7 @@ public interface MarkovPackage extends EPackage {
      *
      * @generated
      */
-    String eNS_PREFIX = "palladiosimulator.org";
+    String eNS_PREFIX = "org.palladiosimulator.reliability";
 
     /**
      * The singleton instance of the package. <!-- begin-user-doc --> <!-- end-user-doc -->

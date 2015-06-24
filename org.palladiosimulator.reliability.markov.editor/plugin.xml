@@ -36,31 +36,5 @@
       </editor>
    </extension>
 
-   <extension point="org.eclipse.ui.newWizards">
-      <!-- @generated markov -->
-      <category
-            id="org.eclipse.emf.ecore.Wizard.category.ID"
-            name="%_UI_Wizard_category"/>
-      <wizard
-            id="org.palladiosimulator.reliability.markov.presentation.MarkovModelWizardID"
-            name="%_UI_MarkovModelWizard_label"
-            class="org.palladiosimulator.reliability.markov.presentation.MarkovModelWizard"
-            category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/MarkovModelFile.gif">
-         <description>%_UI_MarkovModelWizard_description</description>
-         <selection class="org.eclipse.core.resources.IResource"/>
-      </wizard>
-   </extension>
-
-   <extension point="org.eclipse.ui.editors">
-      <!-- @generated markov -->
-      <editor
-            id="org.palladiosimulator.reliability.markov.presentation.MarkovEditorID"
-            name="%_UI_MarkovEditor_label"
-            icon="icons/full/obj16/MarkovModelFile.gif"
-            extensions="markov"
-            class="org.palladiosimulator.reliability.markov.presentation.MarkovEditor"
-            contributorClass="org.palladiosimulator.reliability.markov.presentation.MarkovActionBarContributor">
-      </editor>
-   </extension>
-</plugin>
+null
+null</plugin>
