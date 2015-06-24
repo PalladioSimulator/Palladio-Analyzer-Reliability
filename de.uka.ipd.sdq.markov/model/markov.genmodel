@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.uka.ipd.sdq.markov/src"
-    modelPluginID="de.uka.ipd.sdq.markov" modelName="Markov" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="6.0" copyrightFields="false">
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.palladiosimulator.reliability.markov/src"
+    editDirectory="/org.palladiosimulator.reliability.markov.edit/src" editorDirectory="/org.palladiosimulator.reliability.markov.editor/src"
+    modelPluginID="org.palladiosimulator.reliability.markov" templateDirectory=""
+    modelName="Markov" editPluginClass="org.palladiosimulator.reliability.markov.provider.MarkovEditPlugin"
+    editorPluginClass="org.palladiosimulator.reliability.markov.presentation.MarkovEditorPlugin"
+    codeFormatting="true" testSuiteClass="org.palladiosimulator.reliability.markov.tests.MarkovAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    editPluginID="org.palladiosimulator.reliability.markov.edit" editorPluginID="org.palladiosimulator.reliability.markov.editor"
+    cleanup="true">
   <foreignModel>markov.ecore</foreignModel>
-  <genPackages prefix="Markov" basePackage="de.uka.ipd.sdq" disposableProviderFactory="true"
+  <genPackages prefix="Markov" basePackage="org.palladiosimulator.reliability" disposableProviderFactory="true"
       ecorePackage="markov.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="markov.ecore#//StateType">
       <genEnumLiterals ecoreEnumLiteral="markov.ecore#//StateType/Default"/>
