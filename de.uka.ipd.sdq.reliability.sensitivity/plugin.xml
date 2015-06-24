@@ -23,4 +23,18 @@
             class="de.uka.ipd.sdq.sensitivity.util.SensitivityResourceFactoryImpl"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated sensitivity -->
+      <package
+            uri="http://palladiosimulator.org/Reliability/Sensitivity/1.0"
+            class="org.palladiosimulator.reliability.sensitivity.SensitivityPackage"
+            genModel="model/sensitivity.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated sensitivity -->
+      <parser
+            type="sensitivity"
+            class="org.palladiosimulator.reliability.sensitivity.util.SensitivityResourceFactoryImpl"/>
+   </extension>
 </plugin>

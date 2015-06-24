@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.palladiosimulator.reliability.sensitivity.edit;singleto
 Bundle-Version: 3.1.0.qualifier
 Bundle-ClassPath: .
 Bundle-Activator: de.uka.ipd.sdq.sensitivity.provider.SensitivityEditPlugin$Implementation
-Bundle-Vendor: sdq.ipd.uka.de
+Bundle-Vendor: palladiosimulator.org
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: de.uka.ipd.sdq.sensitivity.provider
