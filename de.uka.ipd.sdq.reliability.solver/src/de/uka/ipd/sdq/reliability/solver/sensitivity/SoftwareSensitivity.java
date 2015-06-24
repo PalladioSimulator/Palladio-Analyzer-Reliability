@@ -11,7 +11,7 @@ import org.palladiosimulator.pcm.reliability.InternalFailureOccurrenceDescriptio
 import org.palladiosimulator.pcm.repository.Repository;
 import org.palladiosimulator.pcm.seff.InternalAction;
 import org.palladiosimulator.pcm.seff.SeffFactory;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
 
 /**
  * Provides sensitivity support to alter the failure probabilities of all internal actions within

@@ -12,7 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.palladiosimulator.pcm.usagemodel.Branch;
 import org.palladiosimulator.pcm.usagemodel.BranchTransition;
 import org.palladiosimulator.pcm.usagemodel.UsagemodelFactory;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
 
 /**
  * Provides sensitivity support to alter the branch probability of a probabilistic usage branch

@@ -19,7 +19,7 @@ import org.palladiosimulator.reliability.sensitivity.FailureDimensionResultSpeci
 
 /**
  * This is the item provider adapter for a
- * {@link de.uka.ipd.sdq.sensitivity.FailureDimensionResultSpecification} object. <!--
+ * {@link org.palladiosimulator.reliability.sensitivity.FailureDimensionResultSpecification} object. <!--
  * begin-user-doc --> <!-- end-user-doc -->
  *
  * @generated

@@ -101,7 +101,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.CombinedSensitivityParameter} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.CombinedSensitivityParameter} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -126,7 +126,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.ComponentReliabilityParameter} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.ComponentReliabilityParameter} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -184,7 +184,7 @@ public class SensitivityItemProviderAdapterFactory
     protected DoubleParameterRangeItemProvider doubleParameterRangeItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.DoubleParameterRange}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.DoubleParameterRange}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -225,7 +225,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.InternalActionReliabilityParameter} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.InternalActionReliabilityParameter} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -251,7 +251,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.ProbabilisticBranchParameter} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.ProbabilisticBranchParameter} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -284,7 +284,7 @@ public class SensitivityItemProviderAdapterFactory
     protected HardwareMTTFParameterItemProvider hardwareMTTFParameterItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.HardwareMTTFParameter}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.HardwareMTTFParameter}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -308,7 +308,7 @@ public class SensitivityItemProviderAdapterFactory
     protected HardwareMTTRParameterItemProvider hardwareMTTRParameterItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.HardwareMTTRParameter}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.HardwareMTTRParameter}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -332,7 +332,7 @@ public class SensitivityItemProviderAdapterFactory
     protected ResourceMTTFParameterItemProvider resourceMTTFParameterItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.ResourceMTTFParameter}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.ResourceMTTFParameter}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -356,7 +356,7 @@ public class SensitivityItemProviderAdapterFactory
     protected ResourceMTTRParameterItemProvider resourceMTTRParameterItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.ResourceMTTRParameter}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.ResourceMTTRParameter}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -397,7 +397,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.CommunicationLinkReliabilityParameter} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.CommunicationLinkReliabilityParameter} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -423,7 +423,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.SoftwareReliabilityParameter} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.SoftwareReliabilityParameter} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -456,7 +456,7 @@ public class SensitivityItemProviderAdapterFactory
     protected VariableUsageParameterItemProvider variableUsageParameterItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.VariableUsageParameter}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.VariableUsageParameter}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -480,7 +480,7 @@ public class SensitivityItemProviderAdapterFactory
     protected UsageBranchParameterItemProvider usageBranchParameterItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.UsageBranchParameter}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.UsageBranchParameter}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -504,7 +504,7 @@ public class SensitivityItemProviderAdapterFactory
     protected DoubleOffsetSequenceItemProvider doubleOffsetSequenceItemProvider;
 
     /**
-     * This creates an adapter for a {@link de.uka.ipd.sdq.sensitivity.DoubleOffsetSequence}. <!--
+     * This creates an adapter for a {@link org.palladiosimulator.reliability.sensitivity.DoubleOffsetSequence}. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -520,7 +520,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.SoftwareFailureTypesParameter} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.SoftwareFailureTypesParameter} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -545,7 +545,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.FailureTypeResultSpecification} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.FailureTypeResultSpecification} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated
@@ -570,7 +570,7 @@ public class SensitivityItemProviderAdapterFactory
 
     /**
      * This keeps track of the one adapter used for all
-     * {@link de.uka.ipd.sdq.sensitivity.FailureDimensionResultSpecification} instances. <!--
+     * {@link org.palladiosimulator.reliability.sensitivity.FailureDimensionResultSpecification} instances. <!--
      * begin-user-doc --> <!-- end-user-doc -->
      *
      * @generated

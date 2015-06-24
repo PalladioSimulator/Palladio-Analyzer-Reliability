@@ -14,16 +14,16 @@ import de.uka.ipd.sdq.reliability.core.MarkovHardwareInducedFailureType;
 import de.uka.ipd.sdq.reliability.core.MarkovNetworkInducedFailureType;
 import de.uka.ipd.sdq.reliability.core.MarkovSoftwareInducedFailureType;
 import de.uka.ipd.sdq.reliability.solver.pcm2markov.MarkovTransformationResult;
-import de.uka.ipd.sdq.sensitivity.DoubleOffsetSequence;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterRange;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterSequence;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterVariation;
-import de.uka.ipd.sdq.sensitivity.FailureDimension;
-import de.uka.ipd.sdq.sensitivity.FailureDimensionResultSpecification;
-import de.uka.ipd.sdq.sensitivity.FailureTypeResultSpecification;
-import de.uka.ipd.sdq.sensitivity.SensitivityParameterVariation;
-import de.uka.ipd.sdq.sensitivity.SensitivityResultSpecification;
-import de.uka.ipd.sdq.sensitivity.StringParameterSequence;
+import org.palladiosimulator.reliability.sensitivity.DoubleOffsetSequence;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterRange;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterSequence;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.FailureDimension;
+import org.palladiosimulator.reliability.sensitivity.FailureDimensionResultSpecification;
+import org.palladiosimulator.reliability.sensitivity.FailureTypeResultSpecification;
+import org.palladiosimulator.reliability.sensitivity.SensitivityParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.SensitivityResultSpecification;
+import org.palladiosimulator.reliability.sensitivity.StringParameterSequence;
 
 /**
  * @author brosch

@@ -23,7 +23,7 @@ import org.palladiosimulator.pcm.seff.ResourceDemandingSEFF;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.seff.seff_reliability.RecoveryAction;
 import org.palladiosimulator.pcm.seff.seff_reliability.RecoveryActionBehaviour;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
 
 /**
  * Provides sensitivity support to alter the failure probabilities of all internal actions within

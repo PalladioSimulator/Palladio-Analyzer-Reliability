@@ -11,7 +11,7 @@ import org.palladiosimulator.pcm.reliability.InternalFailureOccurrenceDescriptio
 import org.palladiosimulator.pcm.reliability.ReliabilityFactory;
 import org.palladiosimulator.pcm.reliability.SoftwareInducedFailureType;
 import org.palladiosimulator.pcm.repository.Repository;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
 
 /**
  * Provides sensitivity support to alter all software failure-on-demand probabilities of a given

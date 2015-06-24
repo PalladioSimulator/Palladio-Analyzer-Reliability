@@ -13,14 +13,14 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
             uri="http://palladiosimulator.org/Reliability/Sensitivity/1.0"
-            class="de.uka.ipd.sdq.sensitivity.SensitivityPackage"
+            class="org.palladiosimulator.reliability.sensitivity.SensitivityPackage"
             genModel="model/sensitivity.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <parser
             type="sensitivity"
-            class="de.uka.ipd.sdq.sensitivity.util.SensitivityResourceFactoryImpl"/>
+            class="org.palladiosimulator.reliability.sensitivity.util.SensitivityResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">

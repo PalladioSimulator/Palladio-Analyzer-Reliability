@@ -17,7 +17,7 @@ import org.palladiosimulator.reliability.sensitivity.CommunicationLinkReliabilit
 
 /**
  * This is the item provider adapter for a
- * {@link de.uka.ipd.sdq.sensitivity.CommunicationLinkReliabilityParameter} object. <!--
+ * {@link org.palladiosimulator.reliability.sensitivity.CommunicationLinkReliabilityParameter} object. <!--
  * begin-user-doc --> <!-- end-user-doc -->
  *
  * @generated

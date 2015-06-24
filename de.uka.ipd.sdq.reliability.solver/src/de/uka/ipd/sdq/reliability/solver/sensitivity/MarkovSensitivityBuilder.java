@@ -11,27 +11,27 @@ import org.eclipse.emf.common.util.EList;
 
 import org.palladiosimulator.pcm.reliability.SoftwareInducedFailureType;
 import de.uka.ipd.sdq.reliability.core.helper.EMFHelper;
-import de.uka.ipd.sdq.sensitivity.CombinedSensitivityParameter;
-import de.uka.ipd.sdq.sensitivity.CommunicationLinkReliabilityParameter;
-import de.uka.ipd.sdq.sensitivity.ComponentReliabilityParameter;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterVariation;
-import de.uka.ipd.sdq.sensitivity.HardwareMTTFParameter;
-import de.uka.ipd.sdq.sensitivity.HardwareMTTRParameter;
-import de.uka.ipd.sdq.sensitivity.InternalActionReliabilityParameter;
-import de.uka.ipd.sdq.sensitivity.NetworkReliabilityParameter;
-import de.uka.ipd.sdq.sensitivity.ProbabilisticBranchParameter;
-import de.uka.ipd.sdq.sensitivity.ResourceMTTFParameter;
-import de.uka.ipd.sdq.sensitivity.ResourceMTTRParameter;
-import de.uka.ipd.sdq.sensitivity.SensitivityConfiguration;
-import de.uka.ipd.sdq.sensitivity.SensitivityPackage;
-import de.uka.ipd.sdq.sensitivity.SensitivityParameter;
-import de.uka.ipd.sdq.sensitivity.SensitivityParameterVariation;
-import de.uka.ipd.sdq.sensitivity.SensitivityResultSpecification;
-import de.uka.ipd.sdq.sensitivity.SoftwareFailureTypesParameter;
-import de.uka.ipd.sdq.sensitivity.SoftwareReliabilityParameter;
-import de.uka.ipd.sdq.sensitivity.StringParameterSequence;
-import de.uka.ipd.sdq.sensitivity.UsageBranchParameter;
-import de.uka.ipd.sdq.sensitivity.VariableUsageParameter;
+import org.palladiosimulator.reliability.sensitivity.CombinedSensitivityParameter;
+import org.palladiosimulator.reliability.sensitivity.CommunicationLinkReliabilityParameter;
+import org.palladiosimulator.reliability.sensitivity.ComponentReliabilityParameter;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.HardwareMTTFParameter;
+import org.palladiosimulator.reliability.sensitivity.HardwareMTTRParameter;
+import org.palladiosimulator.reliability.sensitivity.InternalActionReliabilityParameter;
+import org.palladiosimulator.reliability.sensitivity.NetworkReliabilityParameter;
+import org.palladiosimulator.reliability.sensitivity.ProbabilisticBranchParameter;
+import org.palladiosimulator.reliability.sensitivity.ResourceMTTFParameter;
+import org.palladiosimulator.reliability.sensitivity.ResourceMTTRParameter;
+import org.palladiosimulator.reliability.sensitivity.SensitivityConfiguration;
+import org.palladiosimulator.reliability.sensitivity.SensitivityPackage;
+import org.palladiosimulator.reliability.sensitivity.SensitivityParameter;
+import org.palladiosimulator.reliability.sensitivity.SensitivityParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.SensitivityResultSpecification;
+import org.palladiosimulator.reliability.sensitivity.SoftwareFailureTypesParameter;
+import org.palladiosimulator.reliability.sensitivity.SoftwareReliabilityParameter;
+import org.palladiosimulator.reliability.sensitivity.StringParameterSequence;
+import org.palladiosimulator.reliability.sensitivity.UsageBranchParameter;
+import org.palladiosimulator.reliability.sensitivity.VariableUsageParameter;
 
 /**
  * Creates sensitivity information from a given input sensitivity model.

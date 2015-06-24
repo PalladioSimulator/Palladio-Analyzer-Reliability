@@ -10,7 +10,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.palladiosimulator.pcm.resourceenvironment.CommunicationLinkResourceSpecification;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceEnvironment;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceenvironmentFactory;
-import de.uka.ipd.sdq.sensitivity.DoubleParameterVariation;
+import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
 
 /**
  * Provides sensitivity support to alter the failure probabilities of all communication links within
