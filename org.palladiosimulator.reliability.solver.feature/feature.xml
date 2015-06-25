@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.palladiosimulator.reliability.solver.feature"
+      id="org.palladiosimulator.reliability.feature"
       label="PCM Reliability Solver"
       version="3.5.0.qualifier"
       plugin="org.palladiosimulator.branding"
@@ -8,7 +8,7 @@
       license-feature-version="1.0.0">
 
    <description url="https://sdqweb.ipd.kit.edu/wiki/Reliability_Prediction_for_Component-based_Software_Architectures">
-      Contains the implementation of reliability modelling and solver-based prediction
+      Contains the implementation of reliability modelling and prediction (dedicated solver and SimuCom addon)
 based on the Palladio Component Model.
    </description>
 
@@ -28,13 +28,12 @@ based on the Palladio Component Model.
       <import plugin="org.eclipse.debug.core"/>
       <import plugin="org.eclipse.debug.ui"/>
       <import plugin="de.uka.ipd.sdq.probfunction.math"/>
-      <import plugin="org.palladiosimulator.pcm"/>
       <import plugin="org.eclipse.emf.query"/>
       <import plugin="org.eclipse.emf.common.ui"/>
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability" version="3.1.0" match="greaterOrEqual"/>
-      <import plugin="de.fzi.se.accuracy" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability.sensitivity" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.fzi.se.accuracy" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.apache.log4j"/>
       <import plugin="org.apache.commons.collections15"/>
       <import plugin="org.palladiosimulator.commons" version="1.0.0" match="greaterOrEqual"/>
@@ -52,6 +51,15 @@ based on the Palladio Component Model.
       <import plugin="de.uka.ipd.sdq.stoex.edit"/>
       <import plugin="de.uka.ipd.sdq.units.edit"/>
       <import plugin="org.eclipse.uml2.common.edit"/>
+      <import plugin="org.palladiosimulator.reliability.markov" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.pcm" version="4.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.pcm.codegen.m2m" version="3.1.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.workflow.launchconfig"/>
+      <import plugin="org.eclipse.core.runtime" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.swt" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="3.7.101" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.codegen.simucontroller" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="de.uka.ipd.sdq.simucomframework" version="1.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -105,6 +113,13 @@ based on the Palladio Component Model.
 
    <plugin
          id="org.palladiosimulator.reliability.sensitivity.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.palladiosimulator.reliability.simucom"
          download-size="0"
          install-size="0"
          version="0.0.0"
