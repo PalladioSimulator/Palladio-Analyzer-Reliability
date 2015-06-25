@@ -41,7 +41,7 @@ import org.eclipse.ui.PartInitException;
  * @generated
  */
 public class SensitivityActionBarContributor extends EditingDomainActionBarContributor
-        implements ISelectionChangedListener {
+implements ISelectionChangedListener {
 
     /**
      * This keeps track of the active editor. <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -53,7 +53,7 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
     /**
      * This keeps track of the current selection provider. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @generated
      */
     protected ISelectionProvider selectionProvider;
@@ -64,13 +64,17 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
      * @generated
      */
     protected IAction showPropertiesViewAction = new Action(
-            SensitivityEditorPlugin.INSTANCE.getString("_UI_ShowPropertiesView_menu_item")) {
-
+            SensitivityEditorPlugin.INSTANCE.getString("_UI_ShowPropertiesView_menu_item"))
+    {
         @Override
-        public void run() {
-            try {
+        public void run()
+        {
+            try
+            {
                 SensitivityActionBarContributor.this.getPage().showView("org.eclipse.ui.views.PropertySheet");
-            } catch (final PartInitException exception) {
+            }
+            catch (final PartInitException exception)
+            {
                 SensitivityEditorPlugin.INSTANCE.log(exception);
             }
         }
@@ -84,19 +88,23 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
      * @generated
      */
     protected IAction refreshViewerAction = new Action(
-            SensitivityEditorPlugin.INSTANCE.getString("_UI_RefreshViewer_menu_item")) {
-
+            SensitivityEditorPlugin.INSTANCE.getString("_UI_RefreshViewer_menu_item"))
+    {
         @Override
-        public boolean isEnabled() {
+        public boolean isEnabled()
+        {
             return SensitivityActionBarContributor.this.activeEditorPart instanceof IViewerProvider;
         }
 
         @Override
-        public void run() {
-            if (SensitivityActionBarContributor.this.activeEditorPart instanceof IViewerProvider) {
+        public void run()
+        {
+            if (SensitivityActionBarContributor.this.activeEditorPart instanceof IViewerProvider)
+            {
                 final Viewer viewer = ((IViewerProvider) SensitivityActionBarContributor.this.activeEditorPart)
                         .getViewer();
-                if (viewer != null) {
+                if (viewer != null)
+                {
                     viewer.refresh();
                 }
             }
@@ -107,7 +115,7 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
      * This will contain one {@link org.eclipse.emf.edit.ui.action.CreateChildAction} corresponding
      * to each descriptor generated for the current selection by the item provider. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     protected Collection<IAction> createChildActions;
@@ -194,10 +202,12 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
 
         // Force an update because Eclipse hides empty menus now.
         //
-        submenuManager.addMenuListener(new IMenuListener() {
-
+        submenuManager.addMenuListener
+        (new IMenuListener()
+        {
             @Override
-            public void menuAboutToShow(final IMenuManager menuManager) {
+            public void menuAboutToShow(final IMenuManager menuManager)
+            {
                 menuManager.updateAll(true);
             }
         });
@@ -218,20 +228,25 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
 
         // Switch to the new selection provider.
         //
-        if (this.selectionProvider != null) {
+        if (this.selectionProvider != null)
+        {
             this.selectionProvider.removeSelectionChangedListener(this);
         }
-        if (part == null) {
+        if (part == null)
+        {
             this.selectionProvider = null;
-        } else {
+        }
+        else
+        {
             this.selectionProvider = part.getSite().getSelectionProvider();
             this.selectionProvider.addSelectionChangedListener(this);
 
             // Fake a selection changed event to update the menus.
             //
-            if (this.selectionProvider.getSelection() != null) {
-                this.selectionChanged(
-                        new SelectionChangedEvent(this.selectionProvider, this.selectionProvider.getSelection()));
+            if (this.selectionProvider.getSelection() != null)
+            {
+                this.selectionChanged(new SelectionChangedEvent(this.selectionProvider, this.selectionProvider
+                        .getSelection()));
             }
         }
     }
@@ -241,17 +256,19 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
      * {@link org.eclipse.jface.viewers.SelectionChangedEvent}s by querying for the children and
      * siblings that can be added to the selected object and updating the menus accordingly. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override
     public void selectionChanged(final SelectionChangedEvent event) {
         // Remove any menu items for old selection.
         //
-        if (this.createChildMenuManager != null) {
+        if (this.createChildMenuManager != null)
+        {
             this.depopulateManager(this.createChildMenuManager, this.createChildActions);
         }
-        if (this.createSiblingMenuManager != null) {
+        if (this.createSiblingMenuManager != null)
+        {
             this.depopulateManager(this.createSiblingMenuManager, this.createSiblingActions);
         }
 
@@ -261,7 +278,8 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
         Collection<?> newSiblingDescriptors = null;
 
         final ISelection selection = event.getSelection();
-        if (selection instanceof IStructuredSelection && ((IStructuredSelection) selection).size() == 1) {
+        if (selection instanceof IStructuredSelection && ((IStructuredSelection) selection).size() == 1)
+        {
             final Object object = ((IStructuredSelection) selection).getFirstElement();
 
             final EditingDomain domain = ((IEditingDomainProvider) this.activeEditorPart).getEditingDomain();
@@ -275,11 +293,13 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
         this.createChildActions = this.generateCreateChildActions(newChildDescriptors, selection);
         this.createSiblingActions = this.generateCreateSiblingActions(newSiblingDescriptors, selection);
 
-        if (this.createChildMenuManager != null) {
+        if (this.createChildMenuManager != null)
+        {
             this.populateManager(this.createChildMenuManager, this.createChildActions, null);
             this.createChildMenuManager.update(true);
         }
-        if (this.createSiblingMenuManager != null) {
+        if (this.createSiblingMenuManager != null)
+        {
             this.populateManager(this.createSiblingMenuManager, this.createSiblingActions, null);
             this.createSiblingMenuManager.update(true);
         }
@@ -292,11 +312,12 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
      * 
      * @generated
      */
-    protected Collection<IAction> generateCreateChildActions(final Collection<?> descriptors,
-            final ISelection selection) {
+    protected Collection<IAction> generateCreateChildActions(final Collection<?> descriptors, final ISelection selection) {
         final Collection<IAction> actions = new ArrayList<IAction>();
-        if (descriptors != null) {
-            for (final Object descriptor : descriptors) {
+        if (descriptors != null)
+        {
+            for (final Object descriptor : descriptors)
+            {
                 actions.add(new CreateChildAction(this.activeEditorPart, selection, descriptor));
             }
         }
@@ -313,8 +334,10 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
     protected Collection<IAction> generateCreateSiblingActions(final Collection<?> descriptors,
             final ISelection selection) {
         final Collection<IAction> actions = new ArrayList<IAction>();
-        if (descriptors != null) {
-            for (final Object descriptor : descriptors) {
+        if (descriptors != null)
+        {
+            for (final Object descriptor : descriptors)
+            {
                 actions.add(new CreateSiblingAction(this.activeEditorPart, selection, descriptor));
             }
         }
@@ -333,11 +356,16 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
      */
     protected void populateManager(final IContributionManager manager, final Collection<? extends IAction> actions,
             final String contributionID) {
-        if (actions != null) {
-            for (final IAction action : actions) {
-                if (contributionID != null) {
+        if (actions != null)
+        {
+            for (final IAction action : actions)
+            {
+                if (contributionID != null)
+                {
                     manager.insertBefore(contributionID, action);
-                } else {
+                }
+                else
+                {
                     manager.add(action);
                 }
             }
@@ -353,21 +381,25 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
      * @generated
      */
     protected void depopulateManager(final IContributionManager manager, final Collection<? extends IAction> actions) {
-        if (actions != null) {
+        if (actions != null)
+        {
             final IContributionItem[] items = manager.getItems();
             for (final IContributionItem item : items) {
                 // Look into SubContributionItems
                 //
                 IContributionItem contributionItem = item;
-                while (contributionItem instanceof SubContributionItem) {
+                while (contributionItem instanceof SubContributionItem)
+                {
                     contributionItem = ((SubContributionItem) contributionItem).getInnerItem();
                 }
 
                 // Delete the ActionContributionItems with matching action.
                 //
-                if (contributionItem instanceof ActionContributionItem) {
+                if (contributionItem instanceof ActionContributionItem)
+                {
                     final IAction action = ((ActionContributionItem) contributionItem).getAction();
-                    if (actions.contains(action)) {
+                    if (actions.contains(action))
+                    {
                         manager.remove(contributionItem);
                     }
                 }
@@ -378,7 +410,7 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
     /**
      * This populates the pop-up menu before it appears. <!-- begin-user-doc --> <!-- end-user-doc
      * -->
-     * 
+     *
      * @generated
      */
     @Override
@@ -415,7 +447,7 @@ public class SensitivityActionBarContributor extends EditingDomainActionBarContr
     /**
      * This ensures that a delete action will clean up all references to deleted objects. <!--
      * begin-user-doc --> <!-- end-user-doc -->
-     * 
+     *
      * @generated
      */
     @Override

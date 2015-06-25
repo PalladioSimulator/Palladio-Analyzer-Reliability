@@ -36,31 +36,5 @@
       </editor>
    </extension>
 
-   <extension point="org.eclipse.ui.newWizards">
-      <!-- @generated sensitivity -->
-      <category
-            id="org.eclipse.emf.ecore.Wizard.category.ID"
-            name="%_UI_Wizard_category"/>
-      <wizard
-            id="org.palladiosimulator.reliability.sensitivity.presentation.SensitivityModelWizardID"
-            name="%_UI_SensitivityModelWizard_label"
-            class="org.palladiosimulator.reliability.sensitivity.presentation.SensitivityModelWizard"
-            category="org.eclipse.emf.ecore.Wizard.category.ID"
-            icon="icons/full/obj16/SensitivityModelFile.gif">
-         <description>%_UI_SensitivityModelWizard_description</description>
-         <selection class="org.eclipse.core.resources.IResource"/>
-      </wizard>
-   </extension>
-
-   <extension point="org.eclipse.ui.editors">
-      <!-- @generated sensitivity -->
-      <editor
-            id="org.palladiosimulator.reliability.sensitivity.presentation.SensitivityEditorID"
-            name="%_UI_SensitivityEditor_label"
-            icon="icons/full/obj16/SensitivityModelFile.gif"
-            extensions="sensitivity"
-            class="org.palladiosimulator.reliability.sensitivity.presentation.SensitivityEditor"
-            contributorClass="org.palladiosimulator.reliability.sensitivity.presentation.SensitivityActionBarContributor">
-      </editor>
-   </extension>
-</plugin>
+null
+null</plugin>

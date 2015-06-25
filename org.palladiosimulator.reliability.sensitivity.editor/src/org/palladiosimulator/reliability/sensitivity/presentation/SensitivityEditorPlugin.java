@@ -40,8 +40,14 @@ public final class SensitivityEditorPlugin extends EMFPlugin {
      * @generated
      */
     public SensitivityEditorPlugin() {
-        super(new ResourceLocator[] { IdentifierEditPlugin.INSTANCE, PalladioComponentModelEditPlugin.INSTANCE,
-                ProbabilityFunctionEditPlugin.INSTANCE, StoexEditPlugin.INSTANCE, UnitsEditPlugin.INSTANCE, });
+        super(new ResourceLocator[]
+                {
+                IdentifierEditPlugin.INSTANCE,
+                PalladioComponentModelEditPlugin.INSTANCE,
+                ProbabilityFunctionEditPlugin.INSTANCE,
+                StoexEditPlugin.INSTANCE,
+                UnitsEditPlugin.INSTANCE,
+                });
     }
 
     /**

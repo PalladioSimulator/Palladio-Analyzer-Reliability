@@ -34,7 +34,9 @@ public final class MarkovEditorPlugin extends EMFPlugin {
      * @generated
      */
     public MarkovEditorPlugin() {
-        super(new ResourceLocator[] {});
+        super(new ResourceLocator[]
+                {
+                });
     }
 
     /**
