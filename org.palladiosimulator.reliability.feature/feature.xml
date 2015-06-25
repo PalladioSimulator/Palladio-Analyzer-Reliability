@@ -35,7 +35,7 @@ based on the Palladio Component Model.
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability" version="3.1.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability.sensitivity" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="de.fzi.se.accuracy" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.analyzer.accuracy" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.apache.log4j"/>
       <import plugin="org.apache.commons.collections15"/>
       <import plugin="org.palladiosimulator.commons" version="1.0.0" match="greaterOrEqual"/>
