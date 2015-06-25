@@ -1,4 +1,4 @@
-package org.palladiosimulator.reliability.simucom.jobs;
+package org.palladiosimulator.simucom.reliability.jobs;
 
 import java.util.Map;
 

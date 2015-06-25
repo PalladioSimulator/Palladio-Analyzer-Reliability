@@ -6,8 +6,8 @@
          name="SimuCom Reliability Extension"
          point="de.uka.ipd.sdq.workflow.job">
       <workflow_job
-            extension_configurationbuilder="org.palladiosimulator.reliability.simucom.jobs.ReliabilityExtensionConfigurationBuilder"
-            extension_job="org.palladiosimulator.reliability.simucom.jobs.ReliabilityExtensionJob"
+            extension_configurationbuilder="org.palladiosimulator.simucom.reliability.jobs.ReliabilityExtensionConfigurationBuilder"
+            extension_job="org.palladiosimulator.simucom.reliability.jobs.ReliabilityExtensionJob"
             workflow_id="workflow.extension.simucom.before.codegeneration">
       </workflow_job>
    </extension>
@@ -16,7 +16,7 @@
          point="de.uka.ipd.sdq.workflow.tab.extension">
       <workflow_extension
             name="org.palladiosimulator.reliability.simucom.workflow_extension1"
-            runconfig_tab="org.palladiosimulator.reliability.simucom.jobs.ReliabilityExtensionTab"
+            runconfig_tab="org.palladiosimulator.simucom.reliability.jobs.ReliabilityExtensionTab"
             workflow_id="workflow.extension.simucom.before.codegeneration">
       </workflow_extension>
    </extension>

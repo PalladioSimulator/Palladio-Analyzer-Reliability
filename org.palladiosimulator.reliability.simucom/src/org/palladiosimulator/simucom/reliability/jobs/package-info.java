@@ -3,5 +3,5 @@
  * configuration options for SimuCom runs, as well as the UI
  * support to control those options.
  */
-package org.palladiosimulator.reliability.simucom.jobs;
+package org.palladiosimulator.simucom.reliability.jobs;
 
