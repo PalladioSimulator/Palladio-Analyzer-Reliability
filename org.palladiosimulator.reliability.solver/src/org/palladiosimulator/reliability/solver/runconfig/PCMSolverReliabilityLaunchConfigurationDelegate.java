@@ -27,8 +27,8 @@ public class PCMSolverReliabilityLaunchConfigurationDelegate extends PCMSolverLa
     /*
      * (non-Javadoc)
      * 
-     * @see de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverLaunchConfigurationDelegate
-     * #createWorkflowJob (de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration,
+     * @see org.palladiosimulator.solver.runconfig.PCMSolverLaunchConfigurationDelegate
+     * #createWorkflowJob (org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration,
      * org.eclipse.debug.core.ILaunch)
      */
     protected IJob createWorkflowJob(PCMSolverWorkflowRunConfiguration config, ILaunch launch) throws CoreException {
@@ -43,7 +43,7 @@ public class PCMSolverReliabilityLaunchConfigurationDelegate extends PCMSolverLa
     /*
      * (non-Javadoc)
      * 
-     * @see de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverLaunchConfigurationDelegate
+     * @see org.palladiosimulator.solver.runconfig.PCMSolverLaunchConfigurationDelegate
      * #deriveConfiguration(org.eclipse.debug.core.ILaunchConfiguration, java.lang.String)
      */
     protected PCMSolverWorkflowRunConfiguration deriveConfiguration(ILaunchConfiguration configuration, String mode)
@@ -64,7 +64,7 @@ public class PCMSolverReliabilityLaunchConfigurationDelegate extends PCMSolverLa
     /*
      * (non-Javadoc)
      * 
-     * @see de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverLaunchConfigurationDelegate
+     * @see org.palladiosimulator.solver.runconfig.PCMSolverLaunchConfigurationDelegate
      * #setupLogging(org.apache.log4j.Level)
      */
     protected ArrayList<LoggerAppenderStruct> setupLogging(Level logLevel) throws CoreException {

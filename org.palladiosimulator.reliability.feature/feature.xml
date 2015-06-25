@@ -20,7 +20,7 @@ based on the Palladio Component Model.
       <import plugin="org.eclipse.emf.ecore.xmi"/>
       <import plugin="org.eclipse.emf.edit.ui"/>
       <import plugin="org.eclipse.ui.ide"/>
-      <import plugin="de.uka.ipd.sdq.pcmsolver"/>
+      <import plugin="org.palladiosimulator.solver"/>
       <import plugin="de.uka.ipd.sdq.workflow.mdsd"/>
       <import plugin="org.palladiosimulator.analyzer.workflow"/>
       <import plugin="org.eclipse.ui"/>
