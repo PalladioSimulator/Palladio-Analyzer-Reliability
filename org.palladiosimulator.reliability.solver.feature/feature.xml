@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.palladiosimulator.reliability.solver.feature"
-      label="PCM Reliablity Solver Feature"
+      label="PCM Reliability Solver"
       version="3.5.0.qualifier"
       plugin="org.palladiosimulator.branding"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
 
-   <description url="http://sdq.ipd.kit.edu">
-      Contains the implementation of reliability modelling and prediction
-based on the Palladio component model.
+   <description url="https://sdqweb.ipd.kit.edu/wiki/Reliability_Prediction_for_Component-based_Software_Architectures">
+      Contains the implementation of reliability modelling and solver-based prediction
+based on the Palladio Component Model.
    </description>
-
-   <url>
-      <update label="Palladio Update Site" url="http://sdqweb.ipd.uka.de/eclipse/PCM/"/>
-   </url>
 
    <requires>
       <import plugin="org.eclipse.core.runtime"/>
