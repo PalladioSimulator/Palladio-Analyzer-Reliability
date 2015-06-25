@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PCM Reliability Solver Plug-in
-Bundle-SymbolicName: org.palladiosimulator.reliability.solver;singleton:=true
+Bundle-SymbolicName: org.palladiosimulator.solver.reliability;singleton:=true
 Bundle-Version: 3.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
@@ -25,7 +25,7 @@ Require-Bundle: org.palladiosimulator.solver,
  org.eclipse.ui.ide,
  org.palladiosimulator.reliability.sensitivity;bundle-version="1.0.0",
  de.fzi.se.accuracy;bundle-version="1.0.0"
-Export-Package: org.palladiosimulator.reliability.solver,
- org.palladiosimulator.reliability.solver.pcm2markov,
- org.palladiosimulator.reliability.solver.runconfig
+Export-Package: org.palladiosimulator.solver.reliability,
+ org.palladiosimulator.solver.reliability.pcm2markov,
+ org.palladiosimulator.solver.reliability.runconfig
 Bundle-Vendor: palladiosimulator.org

@@ -3,7 +3,7 @@
 <plugin>
    <extension point="org.eclipse.debug.core.launchConfigurationTypes">
       <launchConfigurationType
-            delegate="org.palladiosimulator.reliability.solver.runconfig.PCMSolverReliabilityLaunchConfigurationDelegate"
+            delegate="org.palladiosimulator.solver.reliability.runconfig.PCMSolverReliabilityLaunchConfigurationDelegate"
             id="de.uka.ipd.sdq.dsolver_plugin.PCMSolverLaunchConfigurationType.Reliability"
             name="PCM Solver Reliability"
             modes="run, debug">
@@ -19,7 +19,7 @@
 	<extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
 	    <launchConfigurationTabGroup
 	        type="de.uka.ipd.sdq.dsolver_plugin.PCMSolverLaunchConfigurationType.Reliability"
-	        class="org.palladiosimulator.reliability.solver.runconfig.PCMSolverReliabilityTabGroup"
+	        class="org.palladiosimulator.solver.reliability.runconfig.PCMSolverReliabilityTabGroup"
 	        id="org.eclipse.jdt.debug.ui.launchConfigurationTabGroup.PCMSolver.Reliability">
 	    </launchConfigurationTabGroup>
 	</extension>
@@ -38,7 +38,7 @@
           </separator>
        </menu>
        <action
-             class="org.palladiosimulator.reliability.solver.popup.actions.CompareAction"
+             class="org.palladiosimulator.solver.reliability.popup.actions.CompareAction"
              enablesFor="2"
              id="org.palladiosimulator.reliability.solver.newAction"
              label="Markov Comparison..."
@@ -48,7 +48,7 @@
  </extension>
    <extension point="org.eclipse.ui.editors">
          <editor
-               class="org.palladiosimulator.reliability.solver.visualisation.MarkovResultEditor"
+               class="org.palladiosimulator.solver.reliability.visualisation.MarkovResultEditor"
                extensions="markovresult"
                icon="icons/relsolver.ico"
                id="org.palladiosimulator.reliability.solver.pcm2markov.MarkovResultEditor"
