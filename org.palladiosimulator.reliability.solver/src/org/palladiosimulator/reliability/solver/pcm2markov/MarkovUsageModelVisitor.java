@@ -9,6 +9,8 @@ import org.palladiosimulator.reliability.MarkovEvaluationType;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.markov.State;
 import org.palladiosimulator.reliability.markov.StateType;
+import org.palladiosimulator.solver.transformations.ContextWrapper;
+import org.palladiosimulator.solver.visitors.EMFQueryHelper;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.usagemodel.AbstractUserAction;
 import org.palladiosimulator.pcm.usagemodel.Branch;
@@ -20,8 +22,7 @@ import org.palladiosimulator.pcm.usagemodel.ScenarioBehaviour;
 import org.palladiosimulator.pcm.usagemodel.Start;
 import org.palladiosimulator.pcm.usagemodel.Stop;
 import org.palladiosimulator.pcm.usagemodel.util.UsagemodelSwitch;
-import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
-import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
+
 import de.uka.ipd.sdq.probfunction.math.ManagedPMF;
 
 /**

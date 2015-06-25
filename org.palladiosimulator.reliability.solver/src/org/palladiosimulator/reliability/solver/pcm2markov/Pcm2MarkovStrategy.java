@@ -17,11 +17,10 @@ import org.palladiosimulator.reliability.solver.sensitivity.MarkovSensitivity;
 import org.palladiosimulator.reliability.solver.sensitivity.MarkovSensitivityBuilder;
 import org.palladiosimulator.reliability.solver.visualisation.MarkovHtmlGenerator;
 import org.palladiosimulator.reliability.solver.visualisation.MarkovResultEditorInput;
-
-import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
-import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
-import de.uka.ipd.sdq.pcmsolver.transformations.EMFHelper;
-import de.uka.ipd.sdq.pcmsolver.transformations.SolverStrategy;
+import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.transformations.EMFHelper;
+import org.palladiosimulator.solver.transformations.SolverStrategy;
 
 /**
  * This class performs a transformation from a PCM instance to a Markov Chain instance, and solves

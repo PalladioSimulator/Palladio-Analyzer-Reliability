@@ -6,9 +6,9 @@ import org.palladiosimulator.analyzer.workflow.jobs.LoadMiddlewareConfigurationI
 import org.palladiosimulator.analyzer.workflow.jobs.LoadPCMModelsIntoBlackboardJob;
 import org.palladiosimulator.analyzer.workflow.jobs.StoreAllPCMModelsJob;
 import org.palladiosimulator.analyzer.workflow.jobs.ValidatePCMModelsJob;
+import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
 
 import de.fzi.se.accuracy.jobs.TransformPCMForAccuracyInfluenceAnalysisJob;
-import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
 import de.uka.ipd.sdq.workflow.jobs.ICompositeJob;
 import de.uka.ipd.sdq.workflow.jobs.SequentialBlackboardInteractingJob;
 import de.uka.ipd.sdq.workflow.mdsd.blackboard.MDSDBlackboard;

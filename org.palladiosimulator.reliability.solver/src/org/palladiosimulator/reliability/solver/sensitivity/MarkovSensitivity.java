@@ -11,14 +11,13 @@ import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.EList;
 
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
-import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
-
 import org.palladiosimulator.reliability.helper.EMFHelper;
 import org.palladiosimulator.reliability.sensitivity.DoubleParameterVariation;
 import org.palladiosimulator.reliability.sensitivity.SensitivityParameterVariation;
 import org.palladiosimulator.reliability.sensitivity.SensitivityResultSpecification;
 import org.palladiosimulator.reliability.sensitivity.StringParameterSequence;
 import org.palladiosimulator.reliability.solver.pcm2markov.MarkovTransformationResult;
+import org.palladiosimulator.solver.models.PCMInstance;
 
 /**
  * Base class for (rudimentary) sensitivity analysis.

@@ -5,10 +5,10 @@ import org.eclipse.core.runtime.IProgressMonitor;
 import org.palladiosimulator.analyzer.workflow.blackboard.PCMResourceSetPartition;
 import org.palladiosimulator.analyzer.workflow.jobs.LoadPCMModelsIntoBlackboardJob;
 import org.palladiosimulator.reliability.solver.pcm2markov.Pcm2MarkovStrategy;
+import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.transformations.SolverStrategy;
 
-import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
-import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
-import de.uka.ipd.sdq.pcmsolver.transformations.SolverStrategy;
 import de.uka.ipd.sdq.probfunction.math.IProbabilityFunctionFactory;
 import de.uka.ipd.sdq.probfunction.math.PDFConfiguration;
 import de.uka.ipd.sdq.workflow.jobs.CleanupFailedException;

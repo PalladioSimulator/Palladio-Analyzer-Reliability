@@ -11,10 +11,10 @@ import org.palladiosimulator.reliability.helper.MarkovFailureTypeHelper;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.solver.MarkovSolver;
 import org.palladiosimulator.reliability.solver.sensitivity.MarkovSensitivity;
+import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.visitors.UsageModelVisitor;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
-import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
-import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
-import de.uka.ipd.sdq.pcmsolver.visitors.UsageModelVisitor;
 
 /**
  * This class has the functionality to perform a complete PCM2Markov transformation.

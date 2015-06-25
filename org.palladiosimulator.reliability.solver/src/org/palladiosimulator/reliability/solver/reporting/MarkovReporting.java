@@ -13,8 +13,7 @@ import org.palladiosimulator.reliability.MarkovNetworkInducedFailureType;
 import org.palladiosimulator.reliability.MarkovSoftwareInducedFailureType;
 import org.palladiosimulator.reliability.solver.pcm2markov.MarkovResultApproximation;
 import org.palladiosimulator.reliability.solver.pcm2markov.MarkovTransformationResult;
-
-import de.uka.ipd.sdq.pcmsolver.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
 
 /**
  * Class used for aggregation and output of success/failure probabilities that were calculated

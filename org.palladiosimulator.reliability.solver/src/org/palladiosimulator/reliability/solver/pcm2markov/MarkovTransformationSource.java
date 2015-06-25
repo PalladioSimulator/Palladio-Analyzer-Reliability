@@ -12,8 +12,8 @@ import org.palladiosimulator.pcm.resourceenvironment.ProcessingResourceSpecifica
 import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
 import org.palladiosimulator.pcm.resourcetype.ProcessingResourceType;
 import org.palladiosimulator.pcm.seff.seff_performance.ParametricResourceDemand;
-import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
-import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
+import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.transformations.ContextWrapper;
 
 /**
  * Holds state information required during the PCM2Markov transformation.

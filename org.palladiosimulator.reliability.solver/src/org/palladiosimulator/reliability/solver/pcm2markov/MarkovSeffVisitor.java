@@ -13,6 +13,8 @@ import org.palladiosimulator.reliability.MarkovSoftwareInducedFailureType;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.markov.State;
 import org.palladiosimulator.reliability.markov.StateType;
+import org.palladiosimulator.solver.transformations.ContextWrapper;
+import org.palladiosimulator.solver.visitors.EMFQueryHelper;
 import org.palladiosimulator.pcm.reliability.ExternalFailureOccurrenceDescription;
 import org.palladiosimulator.pcm.reliability.FailureType;
 import org.palladiosimulator.pcm.reliability.HardwareInducedFailureType;
@@ -48,8 +50,7 @@ import org.palladiosimulator.pcm.seff.seff_reliability.FailureHandlingEntity;
 import org.palladiosimulator.pcm.seff.seff_reliability.RecoveryAction;
 import org.palladiosimulator.pcm.seff.seff_reliability.RecoveryActionBehaviour;
 import org.palladiosimulator.pcm.seff.util.SeffSwitch;
-import de.uka.ipd.sdq.pcmsolver.transformations.ContextWrapper;
-import de.uka.ipd.sdq.pcmsolver.visitors.EMFQueryHelper;
+
 import de.uka.ipd.sdq.probfunction.math.ManagedPMF;
 
 /**

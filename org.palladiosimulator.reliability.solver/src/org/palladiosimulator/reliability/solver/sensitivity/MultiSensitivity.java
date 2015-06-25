@@ -3,7 +3,7 @@ package org.palladiosimulator.reliability.solver.sensitivity;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.uka.ipd.sdq.pcmsolver.models.PCMInstance;
+import org.palladiosimulator.solver.models.PCMInstance;
 
 /**
  * Provides a possibility to define multiple sensitivity parameters to be defined within one

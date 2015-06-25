@@ -33,8 +33,8 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Spinner;
 import org.eclipse.swt.widgets.Text;
 import org.palladiosimulator.reliability.MarkovEvaluationType;
+import org.palladiosimulator.solver.runconfig.MessageStrings;
 
-import de.uka.ipd.sdq.pcmsolver.runconfig.MessageStrings;
 import de.uka.ipd.sdq.workflow.launchconfig.ImageRegistryHelper;
 
 /**

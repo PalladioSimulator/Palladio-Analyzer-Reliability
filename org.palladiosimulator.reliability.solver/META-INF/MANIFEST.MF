@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.palladiosimulator.reliability.solver;singleton:=true
 Bundle-Version: 3.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
-Require-Bundle: de.uka.ipd.sdq.pcmsolver,
+Require-Bundle: org.palladiosimulator.solver,
  de.uka.ipd.sdq.workflow.mdsd,
  org.palladiosimulator.analyzer.workflow,
  org.eclipse.ui,
