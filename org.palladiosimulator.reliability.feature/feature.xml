@@ -2,8 +2,7 @@
 <feature
       id="org.palladiosimulator.reliability.feature"
       label="PCM Reliability Solver"
-      version="3.5.0.qualifier"
-      plugin="org.palladiosimulator.branding"
+      version="1.0.0.qualifier"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
 
