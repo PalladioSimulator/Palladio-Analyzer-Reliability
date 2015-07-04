@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.palladiosimulator.reliability.feature"
-      label="PCM Reliability Solver"
+      label="Palladio Component Model - Analyzer: Reliability"
       version="1.0.0.qualifier"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
