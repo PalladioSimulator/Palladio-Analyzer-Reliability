@@ -80,7 +80,35 @@ public abstract class MarkovFailureType implements Comparable<MarkovFailureType>
      */
     public int compareTo(MarkovFailureType o) {
         // The comparison is done by name:
-        return getName().compareTo(o.getName());
+        int nameComparisonResult = getName().compareTo(o.getName());
+		/*
+		 * MarkovFailureTypes are not uniquely identified by their name. The
+		 * name refers to the failure type in the respoitory. In detailed
+		 * evaluation modes, two MarkovFailureTypes can have the same name if
+		 * they relate to the same failure type in the repository, but are
+		 * raised by different PCM elements (e.g. different InternalActions).
+		 */  
+        if (nameComparisonResult != 0){
+        	// names are different, so return that comparison result
+        	return nameComparisonResult;
+        } else {
+        	// names are the same, so also compare based on id. 
+        	int idComparison = getId().compareTo(o.getId());
+        	if (idComparison != 0){
+        		return idComparison;
+        	} else {
+        		// just to make sure that compareTo and equals are always returning the same
+        		boolean equalsResult = this.equals(o);
+        		if (equalsResult){
+        			return 0;
+        		} else {
+        			// probably can never happen, but just to make sure
+        			// use something to get an order. This order may change from run to run. 
+        			return System.identityHashCode(this) - System.identityHashCode(o);
+        		}
+        		
+        	}
+        }
     }
 
     /*
