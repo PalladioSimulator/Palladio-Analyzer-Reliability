@@ -53,6 +53,7 @@ based on the Palladio Component Model.
       <import plugin="de.uka.ipd.sdq.stoex.edit"/>
       <import plugin="de.uka.ipd.sdq.units.edit"/>
       <import plugin="org.eclipse.uml2.common.edit"/>
+      <import plugin="org.palladiosimulator.branding"/>
    </requires>
 
    <plugin
@@ -99,13 +100,6 @@ based on the Palladio Component Model.
 
    <plugin
          id="org.palladiosimulator.reliability.sensitivity.editor"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.palladiosimulator.branding"
          download-size="0"
          install-size="0"
          version="0.0.0"
