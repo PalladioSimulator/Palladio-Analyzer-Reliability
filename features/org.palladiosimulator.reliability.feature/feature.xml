@@ -2,7 +2,7 @@
 <feature
       id="org.palladiosimulator.reliability.feature"
       label="Palladio Component Model - Analyzer: Reliability"
-      version="1.0.0.qualifier"
+      version="4.2.0.qualifier"
       plugin="org.palladiosimulator.branding"
       license-feature="org.palladiosimulator.license"
       license-feature-version="1.0.0">
@@ -28,12 +28,12 @@ based on the Palladio Component Model.
       <import plugin="org.eclipse.debug.core"/>
       <import plugin="org.eclipse.debug.ui"/>
       <import plugin="de.uka.ipd.sdq.probfunction.math"/>
-      <import plugin="org.palladiosimulator.reliability.markov" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.reliability.markov" version="4.2.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.pcm" version="4.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.emf.query"/>
       <import plugin="org.eclipse.emf.common.ui"/>
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
-      <import plugin="org.palladiosimulator.reliability" version="3.1.0" match="greaterOrEqual"/>
+      <import plugin="org.palladiosimulator.reliability" version="4.2.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability.sensitivity" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.analyzer.accuracy" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.apache.log4j"/>
