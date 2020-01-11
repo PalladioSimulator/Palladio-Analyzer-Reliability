@@ -19,6 +19,7 @@
 		<module>org.palladiosimulator.reliability.sensitivity</module>
 		<module>org.palladiosimulator.reliability.sensitivity.edit</module>
 		<module>org.palladiosimulator.reliability.sensitivity.editor</module>
+		<module>org.palladiosimulator.solver.reliability</module>
 	</modules>
 	
 </project>
