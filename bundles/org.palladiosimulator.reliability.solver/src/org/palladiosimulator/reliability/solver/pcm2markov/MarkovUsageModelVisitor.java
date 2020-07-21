@@ -10,6 +10,7 @@ import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.markov.State;
 import org.palladiosimulator.reliability.markov.StateType;
 import org.palladiosimulator.solver.transformations.ContextWrapper;
+import org.palladiosimulator.solver.utils.ManagedPMFParser;
 import org.palladiosimulator.solver.visitors.EMFQueryHelper;
 import org.palladiosimulator.pcm.seff.ServiceEffectSpecification;
 import org.palladiosimulator.pcm.usagemodel.AbstractUserAction;
@@ -258,7 +259,7 @@ public class MarkovUsageModelVisitor extends UsagemodelSwitch<MarkovChain> {
         String specification = loop.getLoopIteration_Loop().getSpecification();
         ManagedPMF pmf;
         try {
-            pmf = ManagedPMF.createFromString(specification);
+            pmf = ManagedPMFParser.createFromString(specification);
         } catch (Exception e) {
             LOGGER.error("Could not create a ManagedPMF from string \"" + specification + "\"");
             return null;
