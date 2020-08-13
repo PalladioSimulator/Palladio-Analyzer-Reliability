@@ -514,6 +514,10 @@ public class FailureStatistics extends AbstractObservable<IFailureStatisticsList
         }
 
     }
+
+	public static Map<MarkovFailureType, Identifier> getSimFailureTypes() {
+		return simFailureTypes;
+	}
 }
 
 class SoftwareFailureStatistics {
