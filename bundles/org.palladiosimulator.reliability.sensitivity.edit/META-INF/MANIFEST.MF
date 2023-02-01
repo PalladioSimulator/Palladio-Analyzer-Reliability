@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: org.palladiosimulator.reliability.sensitivity.provider.SensitivityEditPlugin$Implementation
 Bundle-Vendor: palladiosimulator.org
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Export-Package: org.palladiosimulator.reliability.sensitivity.provider
 Require-Bundle: org.eclipse.core.runtime,
  org.palladiosimulator.reliability.sensitivity;visibility:=reexport,
