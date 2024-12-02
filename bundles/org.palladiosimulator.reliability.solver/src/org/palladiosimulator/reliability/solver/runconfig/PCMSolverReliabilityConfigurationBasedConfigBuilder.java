@@ -7,8 +7,8 @@ import org.palladiosimulator.reliability.MarkovEvaluationType;
 import org.palladiosimulator.solver.runconfig.MessageStrings;
 import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
 
+import de.uka.ipd.sdq.workflow.launchconfig.AbstractWorkflowBasedRunConfiguration;
 import de.uka.ipd.sdq.workflow.launchconfig.AbstractWorkflowConfigurationBuilder;
-import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowBasedRunConfiguration;
 
 /**
  * This class can build PCM reliability solver specific configuration objects out of a given Eclipse
@@ -45,59 +45,40 @@ public class PCMSolverReliabilityConfigurationBasedConfigBuilder extends Abstrac
         config.setReliabilityAnalysis(true);
 
         // Set further properties of the reliability analysis:
-        config.setPrintMarkovStatistics(
-                hasAttribute(MessageStrings.MARKOV_STATISTICS) ? getBooleanAttribute(MessageStrings.MARKOV_STATISTICS)
-                        : false);
-        config.setPrintMarkovSingleResults(
-                hasAttribute(MessageStrings.SINGLE_RESULTS) ? getBooleanAttribute(MessageStrings.SINGLE_RESULTS)
-                        : false);
-        config.setSensitivityModelEnabled(hasAttribute(ConstantsContainer.DO_SENSITIVITY_ANALYSIS)
-                ? getBooleanAttribute(ConstantsContainer.DO_SENSITIVITY_ANALYSIS)
+        config.setPrintMarkovStatistics(hasAttribute(MessageStrings.MARKOV_STATISTICS) ? getBooleanAttribute(MessageStrings.MARKOV_STATISTICS)
+                : false);
+        config.setPrintMarkovSingleResults(hasAttribute(MessageStrings.SINGLE_RESULTS) ? getBooleanAttribute(MessageStrings.SINGLE_RESULTS)
+                : false);
+        config.setSensitivityModelEnabled(hasAttribute(ConstantsContainer.DO_SENSITIVITY_ANALYSIS) ? getBooleanAttribute(ConstantsContainer.DO_SENSITIVITY_ANALYSIS)
                 : ConstantsContainer.DEFAULT_DO_SENSITIVITY_ANALYSIS);
-        config.setSensitivityModelFileName(hasAttribute(ConstantsContainer.SENSITIVITY_MODEL_FILE)
-                ? getStringAttribute(ConstantsContainer.SENSITIVITY_MODEL_FILE)
+        config.setSensitivityModelFileName(hasAttribute(ConstantsContainer.SENSITIVITY_MODEL_FILE) ? getStringAttribute(ConstantsContainer.SENSITIVITY_MODEL_FILE)
                 : ConstantsContainer.DEFAULT_SENSITIVITY_MODEL_FILE);
-        config.setSensitivityLogFileName(hasAttribute(ConstantsContainer.SENSITIVITY_LOG_FILE)
-                ? getStringAttribute(ConstantsContainer.SENSITIVITY_LOG_FILE)
+        config.setSensitivityLogFileName(hasAttribute(ConstantsContainer.SENSITIVITY_LOG_FILE) ? getStringAttribute(ConstantsContainer.SENSITIVITY_LOG_FILE)
                 : ConstantsContainer.DEFAULT_SENSITIVITY_LOG_FILE);
         config.setLogFile(hasAttribute(MessageStrings.LOG_FILE) ? getStringAttribute(MessageStrings.LOG_FILE) : null);
-        config.setNumberOfEvaluatedSystemStatesEnabled(
-                hasAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES_ENABLED)
-                        ? getBooleanAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES_ENABLED)
-                        : false);
-        config.setNumberOfEvaluatedSystemStates(hasAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES)
-                ? getLongAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES)
-                : 0);
-        config.setNumberOfExactDecimalPlacesEnabled(hasAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES_ENABLED)
-                ? getBooleanAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES_ENABLED)
+        config.setNumberOfEvaluatedSystemStatesEnabled(hasAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES_ENABLED) ? getBooleanAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES_ENABLED)
                 : false);
-        config.setNumberOfExactDecimalPlaces(hasAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES)
-                ? getIntegerAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES)
+        config.setNumberOfEvaluatedSystemStates(hasAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES) ? getLongAttribute(MessageStrings.NUMBER_OF_EVALUATED_SYSTEM_STATES)
                 : 0);
-        config.setSolvingTimeLimitEnabled(hasAttribute(MessageStrings.SOLVING_TIME_LIMIT_ENABLED)
-                ? getBooleanAttribute(MessageStrings.SOLVING_TIME_LIMIT_ENABLED)
+        config.setNumberOfExactDecimalPlacesEnabled(hasAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES_ENABLED) ? getBooleanAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES_ENABLED)
                 : false);
-        config.setSolvingTimeLimit(
-                hasAttribute(MessageStrings.SOLVING_TIME_LIMIT) ? getIntegerAttribute(MessageStrings.SOLVING_TIME_LIMIT)
-                        : 0);
-        config.setMarkovModelReductionEnabled(hasAttribute(MessageStrings.MARKOV_MODEL_REDUCTION_ENABLED)
-                ? getBooleanAttribute(MessageStrings.MARKOV_MODEL_REDUCTION_ENABLED)
+        config.setNumberOfExactDecimalPlaces(hasAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES) ? getIntegerAttribute(MessageStrings.NUMBER_OF_EXACT_DECIMAL_PLACES)
+                : 0);
+        config.setSolvingTimeLimitEnabled(hasAttribute(MessageStrings.SOLVING_TIME_LIMIT_ENABLED) ? getBooleanAttribute(MessageStrings.SOLVING_TIME_LIMIT_ENABLED)
+                : false);
+        config.setSolvingTimeLimit(hasAttribute(MessageStrings.SOLVING_TIME_LIMIT) ? getIntegerAttribute(MessageStrings.SOLVING_TIME_LIMIT)
+                : 0);
+        config.setMarkovModelReductionEnabled(hasAttribute(MessageStrings.MARKOV_MODEL_REDUCTION_ENABLED) ? getBooleanAttribute(MessageStrings.MARKOV_MODEL_REDUCTION_ENABLED)
                 : true);
-        config.setMarkovModelTracesEnabled(hasAttribute(MessageStrings.MARKOV_MODEL_TRACES_ENABLED)
-                ? getBooleanAttribute(MessageStrings.MARKOV_MODEL_TRACES_ENABLED)
+        config.setMarkovModelTracesEnabled(hasAttribute(MessageStrings.MARKOV_MODEL_TRACES_ENABLED) ? getBooleanAttribute(MessageStrings.MARKOV_MODEL_TRACES_ENABLED)
                 : false);
-        config.setMarkovModelStorageEnabled(hasAttribute(MessageStrings.MARKOV_MODEL_STORAGE_ENABLED)
-                ? getBooleanAttribute(MessageStrings.MARKOV_MODEL_STORAGE_ENABLED)
+        config.setMarkovModelStorageEnabled(hasAttribute(MessageStrings.MARKOV_MODEL_STORAGE_ENABLED) ? getBooleanAttribute(MessageStrings.MARKOV_MODEL_STORAGE_ENABLED)
                 : false);
-        config.setIterationOverPhysicalSystemStatesEnabled(
-                hasAttribute(MessageStrings.ITERATION_OVER_PHYSICAL_SYSTEM_STATES_ENABLED)
-                        ? getBooleanAttribute(MessageStrings.ITERATION_OVER_PHYSICAL_SYSTEM_STATES_ENABLED)
-                        : true);
-        config.setMarkovModelFile(
-                hasAttribute(MessageStrings.MARKOV_MODEL_FILE) ? getStringAttribute(MessageStrings.MARKOV_MODEL_FILE)
-                        : null);
-        config.setMarkovEvaluationMode(hasAttribute(MessageStrings.MARKOV_EVALUATION_MODE)
-                ? getStringAttribute(MessageStrings.MARKOV_EVALUATION_MODE)
+        config.setIterationOverPhysicalSystemStatesEnabled(hasAttribute(MessageStrings.ITERATION_OVER_PHYSICAL_SYSTEM_STATES_ENABLED) ? getBooleanAttribute(MessageStrings.ITERATION_OVER_PHYSICAL_SYSTEM_STATES_ENABLED)
+                : true);
+        config.setMarkovModelFile(hasAttribute(MessageStrings.MARKOV_MODEL_FILE) ? getStringAttribute(MessageStrings.MARKOV_MODEL_FILE)
+                : null);
+        config.setMarkovEvaluationMode(hasAttribute(MessageStrings.MARKOV_EVALUATION_MODE) ? getStringAttribute(MessageStrings.MARKOV_EVALUATION_MODE)
                 : MarkovEvaluationType.POINTSOFFAILURE.toString()); // POINTSOFFAILURE
         // will
         // be
@@ -109,12 +90,10 @@ public class PCMSolverReliabilityConfigurationBasedConfigBuilder extends Abstrac
         // cannot
         // be
         // found
-        config.setSaveResultsToFileEnabled(hasAttribute(MessageStrings.SAVE_RESULTS_TO_FILE_ENABLED)
-                ? getBooleanAttribute(MessageStrings.SAVE_RESULTS_TO_FILE_ENABLED)
+        config.setSaveResultsToFileEnabled(hasAttribute(MessageStrings.SAVE_RESULTS_TO_FILE_ENABLED) ? getBooleanAttribute(MessageStrings.SAVE_RESULTS_TO_FILE_ENABLED)
                 : true);
-        config.setSaveFile(
-                hasAttribute(MessageStrings.SAVE_FILE_DEFAULT) ? getStringAttribute(MessageStrings.SAVE_FILE_DEFAULT)
-                        : null);
+        config.setSaveFile(hasAttribute(MessageStrings.SAVE_FILE_DEFAULT) ? getStringAttribute(MessageStrings.SAVE_FILE_DEFAULT)
+                : null);
     }
 
 }
