@@ -2,9 +2,9 @@ package org.palladiosimulator.reliability.probe;
 
 import java.util.Map;
 
-import javax.measure.Measure;
-import javax.measure.quantity.Dimensionless;
-import javax.measure.unit.Unit;
+import jakarta.measure.Measure;
+import jakarta.measure.quantity.Dimensionless;
+import jakarta.measure.unit.Unit;
 
 import org.palladiosimulator.measurementframework.measure.IdentifierMeasure;
 import org.palladiosimulator.metricspec.BaseMetricDescription;
