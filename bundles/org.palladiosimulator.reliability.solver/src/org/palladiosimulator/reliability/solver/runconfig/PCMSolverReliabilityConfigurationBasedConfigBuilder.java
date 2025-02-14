@@ -2,7 +2,7 @@ package org.palladiosimulator.reliability.solver.runconfig;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.debug.core.ILaunchConfiguration;
-import org.palladiosimulator.analyzer.workflow.ConstantsContainer;
+import org.palladiosimulator.analyzer.workflow.core.ConstantsContainer;
 import org.palladiosimulator.reliability.MarkovEvaluationType;
 import org.palladiosimulator.solver.runconfig.MessageStrings;
 import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
