@@ -1,6 +1,7 @@
 package org.palladiosimulator.reliability.solver.runconfig;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.Level;
 import org.eclipse.core.runtime.CoreException;
@@ -31,6 +32,7 @@ public class PCMSolverReliabilityLaunchConfigurationDelegate extends PCMSolverLa
      * #createWorkflowJob (org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration,
      * org.eclipse.debug.core.ILaunch)
      */
+    @Override
     protected IJob createWorkflowJob(PCMSolverWorkflowRunConfiguration config, ILaunch launch) throws CoreException {
 
         // To enable accuracy analysis, the former top-level job
@@ -46,6 +48,7 @@ public class PCMSolverReliabilityLaunchConfigurationDelegate extends PCMSolverLa
      * @see org.palladiosimulator.solver.runconfig.PCMSolverLaunchConfigurationDelegate
      * #deriveConfiguration(org.eclipse.debug.core.ILaunchConfiguration, java.lang.String)
      */
+    @Override
     protected PCMSolverWorkflowRunConfiguration deriveConfiguration(ILaunchConfiguration configuration, String mode)
             throws CoreException {
 
@@ -67,12 +70,13 @@ public class PCMSolverReliabilityLaunchConfigurationDelegate extends PCMSolverLa
      * @see org.palladiosimulator.solver.runconfig.PCMSolverLaunchConfigurationDelegate
      * #setupLogging(org.apache.log4j.Level)
      */
-    protected ArrayList<LoggerAppenderStruct> setupLogging(Level logLevel) throws CoreException {
-        ArrayList<LoggerAppenderStruct> loggerList = super.setupLogging(logLevel);
+    @Override
+    protected List<LoggerAppenderStruct> setupLogging(Level logLevel) throws CoreException {
+        List<LoggerAppenderStruct> loggerList = new ArrayList<>(super.setupLogging(logLevel));
         loggerList.add(setupLogger("de.uka.ipd.sdq.reliability", logLevel,
                 Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN : SHORT_LOG_PATTERN));
-        loggerList.add(setupLogger("org.palladiosimulator.reliability.markov", logLevel, Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN
-                : SHORT_LOG_PATTERN));
+        loggerList.add(setupLogger("org.palladiosimulator.reliability.markov", logLevel,
+                Level.DEBUG == logLevel ? DETAILED_LOG_PATTERN : SHORT_LOG_PATTERN));
 
         return loggerList;
     }
