@@ -6,7 +6,7 @@ import org.palladiosimulator.analyzer.workflow.core.blackboard.PCMResourceSetPar
 import org.palladiosimulator.analyzer.workflow.jobs.LoadPCMModelsIntoBlackboardJob;
 import org.palladiosimulator.reliability.solver.pcm2markov.Pcm2MarkovStrategy;
 import org.palladiosimulator.solver.core.models.PCMInstance;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.transformations.SolverStrategy;
 
 import de.uka.ipd.sdq.probfunction.math.IProbabilityFunctionFactory;
