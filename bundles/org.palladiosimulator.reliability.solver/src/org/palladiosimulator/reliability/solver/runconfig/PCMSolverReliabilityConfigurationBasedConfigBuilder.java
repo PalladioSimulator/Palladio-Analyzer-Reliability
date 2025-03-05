@@ -2,13 +2,13 @@ package org.palladiosimulator.reliability.solver.runconfig;
 
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.debug.core.ILaunchConfiguration;
-import org.palladiosimulator.analyzer.workflow.ConstantsContainer;
+import org.palladiosimulator.analyzer.workflow.core.ConstantsContainer;
 import org.palladiosimulator.reliability.MarkovEvaluationType;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.runconfig.MessageStrings;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
 
-import de.uka.ipd.sdq.workflow.launchconfig.AbstractWorkflowBasedRunConfiguration;
-import de.uka.ipd.sdq.workflow.launchconfig.AbstractWorkflowConfigurationBuilder;
+import de.uka.ipd.sdq.workflow.launchconfig.core.AbstractWorkflowBasedRunConfiguration;
+import de.uka.ipd.sdq.workflow.launchconfig.core.configbuilder.AbstractWorkflowConfigurationBuilder;
 
 /**
  * This class can build PCM reliability solver specific configuration objects out of a given Eclipse

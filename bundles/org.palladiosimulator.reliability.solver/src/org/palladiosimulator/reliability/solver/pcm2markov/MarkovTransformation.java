@@ -11,9 +11,9 @@ import org.palladiosimulator.reliability.helper.MarkovFailureTypeHelper;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.solver.MarkovSolver;
 import org.palladiosimulator.reliability.solver.sensitivity.MarkovSensitivity;
-import org.palladiosimulator.solver.models.PCMInstance;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
-import org.palladiosimulator.solver.visitors.UsageModelVisitor;
+import org.palladiosimulator.solver.core.models.PCMInstance;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.core.visitors.UsageModelVisitor;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 
 /**

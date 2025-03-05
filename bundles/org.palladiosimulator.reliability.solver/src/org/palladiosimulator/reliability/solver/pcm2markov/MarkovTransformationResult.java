@@ -14,7 +14,7 @@ import org.eclipse.core.runtime.FileLocator;
 import org.palladiosimulator.reliability.MarkovFailureType;
 import org.palladiosimulator.reliability.markov.MarkovChain;
 import org.palladiosimulator.reliability.markov.State;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.pcm.usagemodel.UsageScenario;
 
 /**

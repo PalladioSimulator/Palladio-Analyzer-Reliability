@@ -17,7 +17,7 @@ import org.palladiosimulator.reliability.sensitivity.SensitivityParameterVariati
 import org.palladiosimulator.reliability.sensitivity.SensitivityResultSpecification;
 import org.palladiosimulator.reliability.sensitivity.StringParameterSequence;
 import org.palladiosimulator.reliability.solver.pcm2markov.MarkovTransformationResult;
-import org.palladiosimulator.solver.models.PCMInstance;
+import org.palladiosimulator.solver.core.models.PCMInstance;
 
 /**
  * Base class for (rudimentary) sensitivity analysis.

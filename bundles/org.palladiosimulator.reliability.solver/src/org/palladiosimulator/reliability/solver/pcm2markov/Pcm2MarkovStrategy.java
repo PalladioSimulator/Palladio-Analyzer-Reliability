@@ -17,9 +17,9 @@ import org.palladiosimulator.reliability.solver.sensitivity.MarkovSensitivity;
 import org.palladiosimulator.reliability.solver.sensitivity.MarkovSensitivityBuilder;
 import org.palladiosimulator.reliability.solver.visualisation.MarkovHtmlGenerator;
 import org.palladiosimulator.reliability.solver.visualisation.MarkovResultEditorInput;
-import org.palladiosimulator.solver.models.PCMInstance;
-import org.palladiosimulator.solver.runconfig.PCMSolverWorkflowRunConfiguration;
-import org.palladiosimulator.solver.transformations.EMFHelper;
+import org.palladiosimulator.solver.core.models.PCMInstance;
+import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
+import org.palladiosimulator.solver.core.transformations.EMFHelper;
 import org.palladiosimulator.solver.transformations.SolverStrategy;
 
 /**
