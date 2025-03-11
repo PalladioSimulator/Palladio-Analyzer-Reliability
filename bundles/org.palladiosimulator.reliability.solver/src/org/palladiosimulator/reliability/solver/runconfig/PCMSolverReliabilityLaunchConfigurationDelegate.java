@@ -7,7 +7,7 @@ import org.apache.log4j.Level;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.debug.core.ILaunch;
 import org.eclipse.debug.core.ILaunchConfiguration;
-import org.palladiosimulator.analyzer.accuracy.jobs.AccuracyInfluenceAnalysisJob;
+import org.palladiosimulator.analyzer.accuracy.ui.jobs.AccuracyInfluenceAnalysisJob;
 import org.palladiosimulator.solver.core.runconfig.PCMSolverWorkflowRunConfiguration;
 import org.palladiosimulator.solver.runconfig.PCMSolverLaunchConfigurationDelegate;
 
