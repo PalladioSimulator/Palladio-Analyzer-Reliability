@@ -6,7 +6,7 @@
     modelName="Markov" editPluginClass="org.palladiosimulator.reliability.markov.provider.MarkovEditPlugin"
     editorPluginClass="org.palladiosimulator.reliability.markov.presentation.MarkovEditorPlugin"
     codeFormatting="true" testSuiteClass="org.palladiosimulator.reliability.markov.tests.MarkovAllTests"
-    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="21.0" copyrightFields="false"
     editPluginID="org.palladiosimulator.reliability.markov.edit" editorPluginID="org.palladiosimulator.reliability.markov.editor"
     cleanup="true">
   <foreignModel>markov.ecore</foreignModel>
