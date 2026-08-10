@@ -8,6 +8,7 @@ import java.util.Collections;
 import org.apache.log4j.Logger;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -17,13 +18,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-import org.eclipse.emf.query.conditions.eobjects.EObjectCondition;
-import org.eclipse.emf.query.conditions.eobjects.EObjectTypeRelationCondition;
-import org.eclipse.emf.query.conditions.eobjects.TypeRelation;
-import org.eclipse.emf.query.statements.FROM;
-import org.eclipse.emf.query.statements.IQueryResult;
-import org.eclipse.emf.query.statements.SELECT;
-import org.eclipse.emf.query.statements.WHERE;
 
 import org.palladiosimulator.pcm.allocation.AllocationPackage;
 import org.palladiosimulator.pcm.parameter.ParameterPackage;
@@ -61,17 +55,16 @@ public class EMFHelper {
         // Prepare the result list:
         EList<EObject> resultList = new BasicEList<EObject>();
 
-        // Search for elements that have the same type of a sub type of the
-        // given type:
-        EObjectCondition hasCompatibleType = new EObjectTypeRelationCondition(type,
-                TypeRelation.SAMETYPE_OR_SUBTYPE_LITERAL);
-
-        // Perform an EMF Model Query:
-        IQueryResult queryResult = new SELECT(new FROM(root), new WHERE(hasCompatibleType)).execute();
-
-        // Fill the resulting list:
-        for (Object result : queryResult) {
-            resultList.add((EObject) result);
+        // Walk the root and its whole containment tree, keeping every element whose
+        // type is the given type or a sub type of it:
+        if (type.isSuperTypeOf(root.eClass())) {
+            resultList.add(root);
+        }
+        for (TreeIterator<EObject> contents = root.eAllContents(); contents.hasNext();) {
+            EObject candidate = contents.next();
+            if (type.isSuperTypeOf(candidate.eClass())) {
+                resultList.add(candidate);
+            }
         }
 
         // Return the result:

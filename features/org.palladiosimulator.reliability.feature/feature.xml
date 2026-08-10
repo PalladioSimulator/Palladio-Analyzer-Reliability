@@ -30,7 +30,6 @@ based on the Palladio Component Model.
       <import plugin="de.uka.ipd.sdq.probfunction.math"/>
       <import plugin="org.palladiosimulator.reliability.markov"/>
       <import plugin="org.palladiosimulator.pcm"/>
-      <import plugin="org.eclipse.emf.query"/>
       <import plugin="org.eclipse.emf.common.ui"/>
       <import plugin="org.eclipse.ui.console" version="3.4.0" match="greaterOrEqual"/>
       <import plugin="org.palladiosimulator.reliability"/>
