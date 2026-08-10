@@ -1,16 +1,9 @@
 package org.palladiosimulator.reliability.solver.test;
 
-import org.eclipse.emf.query.conditions.Condition;
-import org.eclipse.emf.query.conditions.eobjects.EObjectCondition;
-import org.eclipse.emf.query.conditions.eobjects.structuralfeatures.EObjectAttributeValueCondition;
-import org.eclipse.emf.query.conditions.strings.StringValue;
-import org.eclipse.emf.query.statements.FROM;
-import org.eclipse.emf.query.statements.IQueryResult;
-import org.eclipse.emf.query.statements.SELECT;
-import org.eclipse.emf.query.statements.WHERE;
+import org.eclipse.emf.common.util.TreeIterator;
+import org.eclipse.emf.ecore.EObject;
 
 import de.uka.ipd.sdq.identifier.Identifier;
-import de.uka.ipd.sdq.identifier.IdentifierPackage;
 
 /**
  * This class provides additional functionality for the Markov Test Cases. To use this
@@ -33,29 +26,17 @@ public class MarkovTestHelper {
      */
     public Identifier getModelElement(final Identifier root, final String guid) {
 
-        // Search for a string which equals the given GUID:
-        Condition isGuidValue = new StringValue(guid);
-
-        // Search for an identifier whose ID equals the given GUID:
-        EObjectCondition hasGuidValue = new EObjectAttributeValueCondition(IdentifierPackage.Literals.IDENTIFIER__ID,
-                isGuidValue);
-
-        // Perform an EMF Model Query:
-        IQueryResult queryResult = new SELECT(new FROM(root), new WHERE(hasGuidValue)).execute();
-
-        // Return the first element that matches the condition:
-        for (Object next : queryResult) {
-            return (Identifier) next;
+        // Walk the root and its whole containment tree and return the first identifier
+        // whose ID equals the given GUID:
+        if (guid.equals(root.getId())) {
+            return root;
         }
-
-        // Another possibility would be to use an OCL Query:
-        // OCL ocl = org.eclipse.ocl.ecore.OCL.newInstance();
-        // EObjectCondition guidCondition =
-        // new BooleanOCLCondition<EClassifier, EClass, EObject>(
-        // ocl.getEnvironment(), "self.id = '" + guid + "'",
-        // IdentifierPackage.Literals.IDENTIFIER);
-        // IQueryResult queryResult = new SELECT(new FROM(root), new WHERE(
-        // guidCondition)).execute();
+        for (TreeIterator<EObject> contents = root.eAllContents(); contents.hasNext();) {
+            EObject candidate = contents.next();
+            if (candidate instanceof Identifier identifier && guid.equals(identifier.getId())) {
+                return identifier;
+            }
+        }
 
         // Nothing found:
         return null;
